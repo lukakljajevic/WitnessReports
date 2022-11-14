@@ -1,5 +1,4 @@
-﻿using System;
-namespace WitnessReportsApi.Models
+﻿namespace WitnessReportsApi.Models
 {
 	public class WantedResultSet
 	{

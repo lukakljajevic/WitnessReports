@@ -1,6 +1,6 @@
 ﻿namespace WitnessReportsApi.Models
 {
-	public class WantedPerson
+    public class WantedPerson
     {
         public string? Id { get; set; }
         public string? Uid { get; set; }
