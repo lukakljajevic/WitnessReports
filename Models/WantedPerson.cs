@@ -1,7 +1,4 @@
-﻿using System;
-using Microsoft.Extensions.Options;
-
-namespace WitnessReportsApi.Models
+﻿namespace WitnessReportsApi.Models
 {
 	public class WantedPerson
     {

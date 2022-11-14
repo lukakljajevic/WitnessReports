@@ -1,23 +1,20 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using PhoneNumbers;
 using WitnessReportsApi.Models;
 
 namespace WitnessReportsApi.Services
 {
-	public class ReportsService : IReportsService
-	{
+    public class ReportsService : IReportsService
+    {
         private readonly HttpClient _httpClient;
         private readonly IConfiguration _configuration;
         private readonly PhoneNumberUtil _phoneNumberUtil;
-
         public ReportsService(HttpClient httpClient, IConfiguration configuration)
-		{
+        {
             _httpClient = httpClient;
             _configuration = configuration;
             _phoneNumberUtil = PhoneNumbers.PhoneNumberUtil.GetInstance();
         }
-
         public async Task<WitnessReport> Create(string name, string phone)
         {
             var witnessReport = new WitnessReport

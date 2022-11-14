@@ -13,7 +13,8 @@ namespace WitnessReportsApi.Services
         }
         public async Task<string> GetCountryNameFromIpAddress(string ip)
         {
-            try {
+            try
+            {
                 var ipInfo = await _ipDataClient.Lookup(ip);
                 return ipInfo.CountryName;
             }
